@@ -1,0 +1,15 @@
+<view>
+  <view class='swiper' >
+    <view class='swiper-item' 
+    wx:for="{{msgList}}" 
+    wx:key="{{index}}"
+     id="{{item.id}}" 
+     bindtouchstart='touchstart'
+     bindtouchmove='touchmove'
+     bindtouchend='touchend'
+     style='{{index==current?currentstyle:commonstyle}}'
+     >
+      <text>{{index}}{{current}}{{item.title}}</text>
+    </view>
+  </view>
+</view>

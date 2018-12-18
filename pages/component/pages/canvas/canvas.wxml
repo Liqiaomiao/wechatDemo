@@ -1,0 +1,9 @@
+<!--pages/component/pages/canvas/canvas.wxml-->
+<view >
+  <view  class="holePage">
+      <view bindtap="toLongImg">生成长图</view>
+  </view>
+
+ <!-- <canvas canvas-id='longCanvas' style="width:750px;height:{{imgheight}}px"></canvas>  -->
+ <canvas canvas-id='longCanvas2' style="width:750px;height:{{imgheight}}px" wx:if="{{canvasVisible}}"></canvas>
+</view>

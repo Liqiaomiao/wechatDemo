@@ -1,0 +1,14 @@
+.page-section-gap {
+  box-sizing:border-box;
+  padding:0 30rpx;
+}
+.progress-box{
+  display:flex;
+  height:50rpx;
+  margin-bottom:60rpx;
+
+}
+progress {
+  width:100%;
+}
+

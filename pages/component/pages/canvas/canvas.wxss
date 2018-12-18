@@ -1,0 +1,4 @@
+/* pages/component/pages/canvas/canvas.wxss */
+.holePage{
+    height: 100vh;
+}

@@ -1,0 +1,5 @@
+<!--pages/API/pages/auth/auth.wxml-->
+<view>
+  <button open-type="getUserInfo">获取用户信息</button>
+</view>
+

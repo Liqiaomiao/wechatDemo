@@ -1,0 +1,5 @@
+@import "../../../common/lib/weui.wxss";
+.swiper-item {
+  display:block;
+  height:150px;
+}

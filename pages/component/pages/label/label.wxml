@@ -1,0 +1,16 @@
+<import src="../../../common/head.wxml"/>
+<import src="../../../common/foot.wxml"/>
+<view class='container'>
+  <template is="head" data="{{title:'label'}}"/>
+  <view class='page-body'>
+    <view class="page-section page-section-gap">
+      <view class='page-section-title'>label内有多个时选中第一个</view>
+      <label class='label-3'>
+        <checkbox class='checkbox-3'>选项一</checkbox>
+        <checkbox class='checkbox-3'>选项二</checkbox>
+        <view class='label-3-text'>点击该label下的文字默认选中第一个checkbox</view>
+      </label>
+    </view>
+  </view>
+  <templage is="foot"/>
+</view>

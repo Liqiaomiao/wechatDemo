@@ -1,0 +1,15 @@
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+<view class="container">
+  <template is="head" data="{{title:'switch'}}"/>
+  <view class='page-body'>
+    <view class='page-section page-section-gap'>
+      <view class='page-section-title'>默认样式</view>
+      <view class='body-view'>
+        <switch checked bindchange="switch1Change"/>
+        <switch bindchange='switch2Change'/>
+      </view>
+    </view>
+  </view>
+  <template is="foot" />
+</view>

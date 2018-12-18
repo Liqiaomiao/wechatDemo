@@ -1,0 +1,39 @@
+<!--pages/API/pages/image/image.wxml-->
+<import src="../../../common/head.wxml"/>
+<import src="../../../common/foot.wxml"/>
+<view class="container">
+  <template is="head" data="{{title:'choose/previewImage'}}"/>
+  <view class="page-body">
+    <form>
+      <view class="page-section">
+        <view class="weui-cells weui-cells_after-title">
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell_hd">
+              <view class="weui-label">图片来源</view>
+            </view>
+            <view class='weui-cell__bd'>
+              <picker range="{{sourceType}}" bindchange="sourceTypeChange" value='{{sourceTypeIndex}}' mode="selector">
+                <view class="weui-input">{{sourceType[sourceTypeIndex]}}</view>
+              </picker>
+            </view>            
+          </view>
+
+          <view class="weui-cell weui-cell_input">
+            <view class="weui-cell_hd">
+              <view class="weui-label">图片质量</view>       
+            </view>
+            <view class="weui-cell_bd">
+              <picker range='{{sourceSize}}' bindchange='sourceSizeChange' value="{{sourceSizeIndex}}">
+                <view class="weui-input">{{sourceSize[sourceSizeIndex]}}</view>
+              </picker>
+            </view>
+          </view>
+
+        </view>
+      </view>
+    </form>
+  </view>
+
+  <template is="foot"/>
+</view>
+
